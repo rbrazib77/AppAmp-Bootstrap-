@@ -1,0 +1,326 @@
+/* All Common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body, h1,h2,h3,h4,h5,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+a,a:hover{
+    display: inline-block;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* All Common css End */
+
+.my_header span{
+    display: inline-block;
+    font-size: 28px;
+    background: #6278df;
+    width: 39px;
+    height: 40px;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    top: 2px;
+}
+.my_header .navbar-brand{
+    font-size: 25px;
+    font-weight: 600;
+}
+.jon_menu .nav-link{
+    padding-left: 15px !important;
+    padding-right: 20px !important;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.jon_menu .nav-item .nav-link:hover{
+    color: #657be0;
+}
+
+
+/* Slider_Section Start */
+.slider_section{
+    background: url(../images/banner.jpg) no-repeat center center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider_section::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(17, 17, 17, 0.50);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.slider_caption h4{
+    margin-bottom: 35px;
+    color: #fff;
+    font-weight: 400;
+}
+.slider_caption h2{
+    margin-bottom: 50px;
+    font-size: 46px;
+}
+.slider_caption .btn {
+	color: #fff;
+	padding: 12px 20px;
+	font-size: 30px;
+	font-weight: 700;
+}
+.slider_caption .form-control{
+    padding: 18px 20px;
+}
+/* Slider_Section End */
+
+
+.number_counter_item .h2{
+    font-size: 40px;
+    font-weight: 700;
+
+}
+.number_counter_item p{
+    font-size: 20px;
+   font-weight: 400;
+}
+
+/* ======================About Section Start================ */
+.about_section{
+    background: #ddd;
+}
+.about_caption{
+    margin-top: 120px;
+}
+.about_caption h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+.about_caption .lead{
+    font-size: 25px;
+    line-height: 2.7rem;
+    font-weight: 300;
+}
+/* ======================About Section End================ */
+
+/* ======================Feature Section Start================ */
+.feature_item{
+    height: 300px;
+    box-shadow: 2.5px 4.3px 30px 0 #dada;
+}
+.feature_left{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+.feature_left img{
+   height: 100%;
+   max-width: inherit;
+   width: auto;
+   position: relative;
+   left: -35px;
+}
+.feature_right{
+    width: 60%;
+    padding: 25px;
+}
+/* ======================Feature Section End================ */
+/* ======================Portfolio Section Start================ */
+.portfolio_item a{
+    position: relative;
+}
+.portfolio_item a::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: rgba(98, 119, 224, 0.7);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.portfolio_item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+/* ======================Portfolio Section End================ */
+/* ======================Pricing- TableSection Start================ */
+
+.pricing_table{
+    background: #ddd
+}
+.pricing_caption h2{
+    font-size: 48px;
+}
+.pricing_caption .text-muted{
+    font-size: 18px;
+}
+.pricing_item{
+    background: #fff;
+    padding: 33px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.pricing_item h1{
+    font-size: 40px;
+}
+.pricing_item ul{
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 45px;
+}
+.pricing_item ul li{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #777;
+}
+.pricing_item ul li span{
+    color: #657be0;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    width: 40px;
+}
+
+.pricing_item .pricing_btn{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.pricing_item .pricing_btn a{
+    font-size: 23px;
+    color: #657be0;
+    border-color: #657be0;
+    padding: 16px 20px ;
+    background: transparent;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.pricing_item .pricing_btn a:hover{
+    background: rgb(240, 205, 10);
+}
+/* ======================Pricing- TableSection End================ */
+/* ======================Testimonials Section Start================ */
+
+.testimonials_title span{
+    font-size: 50px;
+    color: #dddd;
+}
+.testimonials_title .lead{
+    width: 800px;
+    margin: 0 auto;
+}
+.testimonials_img{
+    height: 70px;
+    width: 70px;
+}
+.testimonials_img img{
+    width: 100%;
+    height: 100%;
+}
+/* ======================Testimonials Section End================ */
+/* ======================Team Section Start================ */
+.team_section{
+    background: #dddd;
+}
+.team_caption .lead{
+	line-height: 30px;
+}
+.team_caption .para{
+    padding-top: 74px;
+}
+.team_item{
+    margin-top: 120px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.team_item .card img{
+    height: auto;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+.team_item .card .btn:hover{
+    background: rgba(17, 17, 17, 0.651);
+    color: #fff;
+}
+/* ======================Team Section End================ */
+/* ======================Contact Section Start================ */
+.contact_form .card{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+    padding: 40px;
+}
+/* ======================Contact Section End================ */
+/* ======================Brand Section Start================ */
+.brand_caption h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.brand_caption .btn{
+    background: transparent;
+    color: yellowgreen;
+    padding: 15px 25px;
+    margin-right: 20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.brand_caption .btn:hover{
+    background: turquoise;
+    color:#fff;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.brand_caption .bbb{
+    background: turquoise;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    color: blue;
+}
+.brand_caption .bbb:hover{
+    background: black;
+    color: #ffff;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.brand_caption i{
+    margin-right: 10px;
+}
+/* ======================Brand Section End================ */
+/* ======================Footer Section End================ */
+.footer{
+    background: rgba(222, 184, 135, 0.123);
+}
+/* ======================Footer Section End================ */
